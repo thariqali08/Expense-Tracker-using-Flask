@@ -50,6 +50,7 @@ This is a simple web-based Expense Tracker application built using Flask and SQL
 - List All Expenses: View all the expenses and the total amount spent.
 
 ## File Structure
-- templates/: Contains the HTML templates for rendering the web pages.
-- app.py: Main application file that contains the Flask routes and logic.
+- templates/ [home.html](https://github.com/thariqali08/Expense-Tracker-using-Flask/blob/main/home.html), [index.html](https://github.com/thariqali08/Expense-Tracker-using-Flask/blob/main/index.html), 
+ [list_all](https://github.com/thariqali08/Expense-Tracker-using-Flask/blob/main/list_all.html), [add_expense.html](https://github.com/thariqali08/Expense-Tracker-using-Flask/blob/main/add_expense.html): Contains the HTML templates for rendering the web pages.
+- [main.py](https://github.com/thariqali08/Expense-Tracker-using-Flask/blob/main/main.py): Main application file that contains the Flask routes and logic.
 - expense_data.db: SQLite database file (will be created automatically).
