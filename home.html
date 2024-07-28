@@ -1,0 +1,21 @@
+<html>
+    <title>Expense Tracker</title>
+    <body>
+        <h1 style="color: black;"> Welcome Expense Tracker</h1>
+        <h3 style="color: rgb(8, 169, 218);">Login</h3>
+        {% if error %}
+        <p><strong>Error:</strong></p>{{error}}
+        {% endif %}
+        <form action="http://127.0.0.1:5005/login" method="post">
+            <dl>
+                <dt>Username:</dt>
+                <dd>
+                    <input type="text" name="username" value="{{request.form.username}}">
+                </dd>
+                <dt>Password:</dt>
+                <dd><input type='password' name='password'></dd>
+            </dl>
+            <p><input type="submit" value="Login"></p>
+
+    </body>
+</html>

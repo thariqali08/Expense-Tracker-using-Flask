@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+</head>
+<body> 
+    <h2 style="color: black;">Add Expense</h2>
+    <form action="{{url_for('add_expense')}}" method="post">
+        <label>Date:</label>
+        <input type="date" name="date" required><br>
+        <label>Category:</label>
+        <input type="text" name="category" required><br>
+        <label>Description:</label>
+        <input type="text" name="description" required><br>
+        <label>Amount:</label>
+        <input type="number" name="amount" step="0.01" required><br>
+        <input type="submit" value="Add Expense">
+    </form>
+</body>
+</html>
